@@ -1,0 +1,354 @@
+/*
+Theme Name: wp_bluefilters
+Theme URI: https://lukaszwalaszczyk.pl
+Author: ŁW
+Author URI: https://lukaszwalaszczyk.pl
+Description: Wordpress Template made by ŁW
+Version: 1.1
+Tags: lw
+Text Domain: lw
+*/
+
+.div-rel-cafel.img-contain .img-photo-cafel {
+    object-fit: contain;
+}
+
+.menu-title-drop {
+    position: relative;
+}
+
+.menu-title-drop>a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wpml-ls-legacy-dropdown-click {
+    width: auto;
+}
+
+.wpml-ls-legacy-dropdown-click .wpml-ls-current-language:hover>a,
+.wpml-ls-legacy-dropdown-click a:focus,
+.wpml-ls-legacy-dropdown-click a:hover {
+    background-color: #fff;
+}
+
+.wpml-ls-legacy-dropdown-click a {
+    border: none;
+    color: #000;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    border: none;
+    border-top: 1px solid #f2f2f2;
+    padding: 20px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
+    font-size: 14px;
+    color: #808080;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+    border-color: #f2f2f2;
+}
+
+.wpcf7-not-valid-tip {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.wpcf7-list-item-label {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    position: relative;
+    top: -2px;
+    display: block;
+    padding-left: 20px;
+}
+
+.wpcf7-list-item input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wpcf7-list-item label {
+    line-height: 16px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.wpcf7-list-item {
+    margin: 0px;
+}
+
+.div-form-filter-item .facetwp-facet {
+    margin-bottom: 0px;
+}
+
+.div-form-filtering {
+    overflow: visible;
+}
+
+html .fs-search {
+    display: none;
+}
+
+.filter-button {
+    line-height: 34px;
+}
+
+html .fs-wrap.multiple .fs-option {
+    padding: 15px 15px;
+    padding-left: 45px;
+    font-weight: 400;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+html .fs-wrap.multiple .fs-option:last-child {
+    border-bottom: 0px solid #F2F2F2;
+}
+
+html .fs-wrap.multiple .fs-checkbox {
+    width: 50px;
+}
+
+html .fs-wrap.multiple .fs-option .fs-checkbox i {
+    border: 1px solid #404040;
+    border-radius: 0px;
+}
+
+html .fs-wrap.multiple .fs-option.selected .fs-checkbox i {
+    background-color: #FFDD00;
+}
+
+html .fs-dropdown {
+    width: 100%;
+    margin-top: 1px;
+    border: 0px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0px 18px 41px rgba(0, 0, 0, 0.09);
+}
+
+html .fs-label-wrap .fs-label {
+    padding: 8px 20px;
+    height: 50px;
+    line-height: 34px;
+    background-image: url(images/arrow-bottom-dropdown.svg);
+    background-position: 93% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+html .fs-arrow {
+    display: none;
+}
+
+html .fs-wrap {
+    width: 100%;
+    position: relative;
+}
+
+html .fs-label-wrap {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    background-color: #fff;
+    color: grey;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+
+a.facetwp-page {
+    display: inline-block;
+    width: 46px;
+    height: 42px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #c2c2c2;
+    border-radius: 5px;
+    background-color: transparent;
+    -webkit-transition: border 400ms ease, background-color 400ms ease;
+    transition: border 400ms ease, background-color 400ms ease;
+    color: grey;
+    line-height: 40px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a.facetwp-page:hover {
+    border-color: #fd0;
+    background-color: #fd0;
+}
+
+a.facetwp-page.active {
+    border-color: #fd0;
+    background-color: #fd0;
+}
+
+.bread-space {
+    margin: 0px 10px;
+}
+
+.tb-breadcrumbs a {
+    color: grey;
+    text-decoration: none;
+}
+
+.tb-breadcrumbs.white-bradcrumbs a {
+    color: #fff;
+}
+
+img {
+    height: auto;
+}
+
+.a-bfooter {
+    padding: 0px;
+}
+
+.a-link-footer {
+    margin-left: 0;
+}
+
+.w-nav-link.w--current {
+    color: #fd0;
+}
+
+.w-richtext img {
+    height: auto !important;
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0 1em 1em
+}
+
+img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0
+}
+
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+a img.alignright {
+    float: right;
+    margin: 0 0 1em 1em
+}
+
+a img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.div-search-box {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+}
+
+.div-search-box.visible-search {
+    visibility: visible;
+    opacity: 1;
+}
+
+.div-search-box.visible-search .div-search-box-white {
+    transform: translateY(0);
+}
+
+.div-fixed-ask {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+}
+
+.div-fixed-ask.visible-ask {
+    visibility: visible;
+    opacity: 1;
+}
+
+.div-fixed-ask.visible-ask .div-ask-about-project {
+    transform: translateY(0);
+}
+
+.button:hover .span-arrow-right {
+    transform: translateX(5px);
+}
+
+.div-a-brand {
+    box-shadow: 0px 38px 29px rgba(0, 0, 0, 0.05);
+}
+
+.logo-circle {
+    fill: #fff;
+    stroke: #FFDD06;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 604;
+    stroke-dashoffset: 451;
+    transform: rotate(31deg);
+    transform-origin: center;
+}
+
+.button {
+    display: inline-flex;
+}
+
+.a-offer-item:hover .img-offer-el {
+    transform: scale(1.05);
+}
+
+select.select-field {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.img-lightbox-play:hover img,
+.a-link-abs-arrow:hover img {
+    transform: scale(1.05);
+}
+
+.img-lightbox-play:hover div,
+.a-link-abs-arrow:hover div {
+    transform: scale(1.30);
+}
+
+.div-parameter-item:last-child,
+.div-download-item:last-child,
+.a-search-item:last-child {
+    border-bottom-width: 0px;
+}
+
+.section.page-target-group-single .rich-main {
+    color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+    .div-a-brand {
+        box-shadow: none;
+    }
+
+    .menu-title-drop>a {
+        display: none;
+    }
+}
