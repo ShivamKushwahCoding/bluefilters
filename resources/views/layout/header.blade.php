@@ -637,7 +637,7 @@
                         </svg>
                     </div>
                     <div class="div-a-brand">
-                        <img src="wp-content/uploads/2021/09/blue-filters-logo.svg" loading="lazy" alt=""
+                        <img src="{{asset('wp-content/uploads/2021/09/blue-filters-logo.svg')}}" loading="lazy" alt=""
                             class="img-brand-logo">
                     </div>
                 </a>
@@ -656,14 +656,13 @@
                             </div>
                             <nav class="dropdown_list w-dropdown-list">
                                 <div class="div-drop-shadow">
-                                    <div class="div-box-shadow-drop"><a href="{{route('sector',['id'=>1])}}"
-                                            class="dropdown_link w-dropdown-link">HoReCa</a><a
-                                            href="{{route('sector',['id'=>1])}}"
-                                            class="dropdown_link w-dropdown-link">Beauty</a><a
-                                            href="{{route('sector',['id'=>1])}}"
-                                            class="dropdown_link w-dropdown-link">Office</a><a
-                                            href="{{route('sector',['id'=>1])}}"
-                                            class="dropdown_link w-dropdown-link">Industry</a></div>
+                                    <div class="div-box-shadow-drop">
+                                        @if(isset($sectors))
+                                        @foreach($sectors as $sector)
+                                        <a href="{{route('sector',['id'=>$sector->id])}}" class="dropdown_link w-dropdown-link">$sector->name</a>
+                                        @endforeach
+                                        @endif
+                                    </div>
                                 </div>
                             </nav>
                         </div><a href="{{route('partners')}}" class="navlink w-nav-link @if(Request::url() == url('partners'))w--current @endif ">Partners</a>
@@ -675,8 +674,15 @@
                             </div>
                             <nav class="dropdown_list w-dropdown-list">
                                 <div class="div-drop-shadow">
-                                    <div class="div-box-shadow-drop"><a href="{{route('news-view',['id'=>1])}}"
-                                            class="dropdown_link w-dropdown-link">Trade fairs</a></div>
+                                    <div class="div-box-shadow-drop">
+                                        @if(isset($news))
+                                        @foreach($news as $value)
+                                        <a href="{{route('news-view',['id'=>$value->id])}}"
+                                            class="dropdown_link w-dropdown-link">$value->name
+                                        </a>
+                                        @endforeach
+                                        @endif
+                                    </div>
                                 </div>
                             </nav>
                         </div>

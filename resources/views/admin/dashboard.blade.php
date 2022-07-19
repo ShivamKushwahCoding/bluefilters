@@ -71,7 +71,7 @@
                         </div>
                         <div class="col-lg-3 col-sm-6 col-12">
                             <div class="card">
-                                <a href="{{route('admin.filters')}}">
+                                <a href="{{route('admin.products')}}">
                                     <div class="card-header flex-column align-items-start pb-0">
                                         <div class="avatar bg-light-danger p-50 m-0">
                                             <div class="avatar-content">

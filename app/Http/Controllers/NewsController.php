@@ -66,7 +66,7 @@ class NewsController extends Controller
         }
     }
 
-    public function TechnologyAjax(Request $request)
+    public function NewsAjax(Request $request)
     {
         $news = News::orderBy('id', 'DESC')->get();
 
